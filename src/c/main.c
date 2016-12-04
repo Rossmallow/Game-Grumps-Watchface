@@ -4,7 +4,7 @@ static Window *s_main_window;
 static TextLayer *s_time_layer, *s_date_layer;
 static BitmapLayer *s_background_layer, *s_bt_icon_layer;
 static GBitmap *s_background_bitmap, *s_bt_icon_bitmap;
-static GFont s_small_font, s_medium_font, s_large_font;
+static GFont s_small_font, s_large_font;
 static int s_battery_level;
 static Layer *s_battery_layer;
 
@@ -128,7 +128,6 @@ static void main_window_load(Window *window) {
 	
   // Create GFont
   s_small_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_GGFONT_12));
-	s_medium_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_GGFONT_24));
 	s_large_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_GGFONT_32));
 	
   // Apply to TextLayer
@@ -154,7 +153,6 @@ static void main_window_unload(Window *window) {
 
   // Unload GFonts
   fonts_unload_custom_font(s_small_font);
-	fonts_unload_custom_font(s_medium_font);
 	fonts_unload_custom_font(s_large_font);
 
   // Destroy GBitmaps

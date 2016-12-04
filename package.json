@@ -40,12 +40,6 @@
                     "name": "GGFONT_32",
                     "targetPlatforms": null,
                     "type": "font"
-                },
-                {
-                    "file": "fonts/GGFont24",
-                    "name": "GGFONT_24",
-                    "targetPlatforms": null,
-                    "type": "font"
                 }
             ]
         },
